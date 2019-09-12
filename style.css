@@ -1,0 +1,99 @@
+
+
+.A{
+    height: 20px;
+    width: 50px;
+    background-color: green;
+    align-self: center;
+}
+.B{
+    height: 20px;
+    width: 100px;
+    background-color: red;
+    align-self: center;
+}
+.C{
+    height: 20px;
+    width: 150px;
+    background-color: purple;
+    align-self: center;
+}
+.D{
+    height: 20px;
+    width: 200px;
+    background-color: blue;
+    align-self: center;
+}
+.stage{
+    float: left;
+    height: 150px;
+    width: 33%;
+    display: flex;
+
+    flex-direction: column-reverse;
+    outline: 1px solid black;
+    position: relative;
+    outline-offset: -1px;
+}
+.rod{
+    height: 100%;   
+    width: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+}
+
+#winPage{
+    padding-top: 150px;
+    visibility: hidden;
+    -webkit-animation: colorchange 200ms infinite;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    text-align: center;
+}
+@-webkit-keyframes colorchange {
+    0% {background-image: linear-gradient(0deg,red,orange,yellow,green,blue,purple);}
+    20% {background-image: linear-gradient(72deg,red,orange,yellow,green,blue,purple);} 
+    40% {background-image: linear-gradient(144deg,red,orange,yellow,green,blue,purple);} 
+    60% {background-image: linear-gradient(216deg,red,orange,yellow,green,blue,purple);}  
+    80% {background-image: linear-gradient(288deg,red,orange,yellow,green,blue,purple);} 
+    100% {background-image: linear-gradient(360deg,red,orange,yellow,green,blue,purple);}
+}
+span{
+    -webkit-animation: textcolorchange 3s infinite;
+    font-size: 100px;
+    
+}
+@-webkit-keyframes textcolorchange {
+    0% {color: red;}
+    20% {color: orange;} 
+    40% {color: yellow;} 
+    60% {color: green;}  
+    80% {color: blue;  } 
+    100% {color: purple;}
+}
+button{
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 40px;
+    height: 100px;
+    width: 300px;
+    -webkit-animation: buttonshape 3s infinite, textcolorchange 5s infinite;
+
+    border-radius: 0%;
+}
+@-webkit-keyframes buttonshape {
+
+    0% {border-radius: 0%;}
+    20% {border-radius: 40%;}
+    40% {border-radius: 80%;}
+    50%{ border-radius: 100%;}
+    60% {border-radius: 80%;} 
+    80% {border-radius: 40%;}
+    100% {border-radius: 0%;}
+}

@@ -1,0 +1,37 @@
+div#starttower{
+    display: flex;  
+    flex-direction: column-reverse;  
+    align-items: center;
+}
+
+div#offsettower{
+    display: flex;  
+    flex-direction: column-reverse;  
+    align-items: center;
+}
+
+div#endtower{
+    display: flex;  
+    flex-direction: column-reverse;  
+    align-items: center;
+}
+
+div#bluedisk {
+    background: blue;
+
+}   
+
+div#purpledisk {
+    background: purple;
+
+}
+
+div#golddisk {
+    background: gold;
+
+}
+
+div#reddisk {
+    background: red;
+
+}

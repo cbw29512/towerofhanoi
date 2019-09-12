@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <script src='script.js'></script>
+
+
+    <div id='winPage'>
+        <span><b>WINNER!</b></span>
+        <br>
+        <button onclick="reload()">Play again?</button>
+    </div>
+    
+    
+    <div id='start' class='stage' ondrop='drop(event)' ondragover='allowDrop(event)'>
+        <div class='rod' id='5' ></div>
+        <div class='D' id='4' draggable="true" ondragstart='drag(event)'></div>
+        <div class='C' id='3' draggable="true" ondragstart='drag(event)'></div>
+        <div class='B' id='2' draggable="true" ondragstart='drag(event)'></div>
+        <div class='A' id='1' draggable="true" ondragstart='drag(event)'></div>
+    </div>
+    
+    <div id='offset' class='stage' ondrop='drop(event)' ondragover='allowDrop(event)'>
+        <div class='rod' id='5'></div>
+    </div>
+    <div id='end' class='stage' ondrop='drop(event)' ondragover='allowDrop(event)'>
+        <div class='rod' id='5'></div>
+        </div>
+
+
+
+</body>
+</html>
