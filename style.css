@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap');
 
 h1 {
     text-align: center;
     font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 8vw;
+}
+
+p {
+    font-size: 2vw;
+    font-family: 'Roboto', sans-serif;
 }
 
 .A{
