@@ -1,32 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
 
+h1 {
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 8vw;
+}
 
 .A{
-    height: 20px;
-    width: 50px;
+    height: 2vw;
+    width: 5vw;
     background-color: green;
     align-self: center;
 }
 .B{
-    height: 20px;
-    width: 100px;
+    height: 2vw;
+    width: 10vw;
     background-color: red;
     align-self: center;
 }
 .C{
-    height: 20px;
-    width: 150px;
+    height: 2vw;
+    width: 15vw;
     background-color: purple;
     align-self: center;
 }
 .D{
-    height: 20px;
-    width: 200px;
+    height: 2vw;
+    width: 20vw;
     background-color: blue;
     align-self: center;
 }
 .stage{
     float: left;
-    height: 150px;
+    height: 15vw;
     width: 33%;
     display: flex;
 
@@ -37,7 +43,7 @@
 }
 .rod{
     height: 100%;   
-    width: 10px;
+    width: 1vw;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -57,7 +63,7 @@
     z-index: 2;
     text-align: center;
 }
-@-webkit-keyframes colorchange {
+@keyframes colorchange {
     0% {background-image: linear-gradient(0deg,red,orange,yellow,green,blue,purple);}
     20% {background-image: linear-gradient(72deg,red,orange,yellow,green,blue,purple);} 
     40% {background-image: linear-gradient(144deg,red,orange,yellow,green,blue,purple);} 
@@ -70,7 +76,7 @@ span{
     font-size: 100px;
     
 }
-@-webkit-keyframes textcolorchange {
+@keyframes textcolorchange {
     0% {color: red;}
     20% {color: orange;} 
     40% {color: yellow;} 
@@ -80,14 +86,14 @@ span{
 }
 button{
     font-family: 'Comic Sans MS', sans-serif;
-    font-size: 40px;
-    height: 100px;
-    width: 300px;
+    font-size: 2vw;
+    height: 3vw;
+    width: 9vw;
     -webkit-animation: buttonshape 3s infinite, textcolorchange 5s infinite;
 
     border-radius: 0%;
 }
-@-webkit-keyframes buttonshape {
+@keyframes buttonshape {
 
     0% {border-radius: 0%;}
     20% {border-radius: 40%;}
@@ -96,4 +102,8 @@ button{
     60% {border-radius: 80%;} 
     80% {border-radius: 40%;}
     100% {border-radius: 0%;}
+}
+
+.restartbutton {
+    text-align: right;
 }
